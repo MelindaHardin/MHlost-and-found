@@ -1,3 +1,3 @@
 $("#ig-icon").on("click",function(){
-    alert("The paragraph was clicked.");
+    alert("This was clicked.");
 });
