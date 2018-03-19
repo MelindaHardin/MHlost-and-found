@@ -17,3 +17,7 @@ form{
 h6{
     text-align: left;
 }
+
+#logout {
+    text-align: right;
+}
