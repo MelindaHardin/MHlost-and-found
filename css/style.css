@@ -2,6 +2,7 @@
     float: left;
     height: 80px;
     width: 80px;
+    cursor: pointer;
     
 }
 
@@ -14,10 +15,19 @@ form{
     clear: both;
 }
 
-h6{
+h1, h6 {
+    color: green;
+}
+
+p{
     text-align: left;
+    cursor: context-menu;
 }
 
 #logout {
     text-align: right;
+}
+
+#index-body{
+
 }
