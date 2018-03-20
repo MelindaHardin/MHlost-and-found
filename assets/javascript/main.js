@@ -1,16 +1,22 @@
 // Initialize Firebase
 var config = {
-    apiKey: "AIzaSyDDnN22h-2IbbbYcgPlYDiEhGJfV6f01-g",
-    authDomain: "lofo-eac04.firebaseapp.com",
-    databaseURL: "https://lofo-eac04.firebaseio.com",
-    projectId: "lofo-eac04",
-    storageBucket: "lofo-eac04.appspot.com",
-    messagingSenderId: "675258511870"
+    apiKey: "AIzaSyACOH-c1yCW2ZzJY0YE1ustDgZFMlzahCw",
+    authDomain: "lofo-e6dae.firebaseapp.com",
+    databaseURL: "https://lofo-e6dae.firebaseio.com",
+    projectId: "lofo-e6dae",
+    storageBucket: "",
+    messagingSenderId: "523681262794"
   };
   firebase.initializeApp(config);
 
   var database = firebase.database();
 
+  queryURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtFRgVzWWws1qJtMur1dJG3DkhvAgqXxA=initMap"
+   
+function initMap(){
+
+    
+}
 // ============================================= USER AUTHENTICATION ==============================================
 var email="";
 var password= "";
