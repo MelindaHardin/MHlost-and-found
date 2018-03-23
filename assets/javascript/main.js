@@ -15,7 +15,9 @@ var config = {
 
   queryURL="https://maps.googleapis.com/maps/api/js?" + key;
    
-function initMap(){
+// ============================================= GOOGLE MAP is connecting ==============================================
+
+  function initMap(){
 
     $.ajax({
         url:queryURL,
@@ -23,11 +25,15 @@ function initMap(){
     }).then(function(response){
         console.log(queryURL);
         console.log(response);
+
     });
-    
+  
 }
 
 $("#google-icon").on("click",initMap);
+
+
+
 // ============================================= USER AUTHENTICATION ==============================================
 var email="";
 var password= "";
