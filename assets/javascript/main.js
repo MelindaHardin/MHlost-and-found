@@ -11,12 +11,23 @@ var config = {
 
   var database = firebase.database();
 
-  queryURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtFRgVzWWws1qJtMur1dJG3DkhvAgqXxA=initMap"
+  var key="AIzaSyDtFRgVzWWws1qJtMur1dJG3DkhvAgqXxA=initMap"
+
+  queryURL="https://maps.googleapis.com/maps/api/js?" + key;
    
 function initMap(){
 
+    $.ajax({
+        url:queryURL,
+        method: "GET"
+    }).then(function(response){
+        console.log(queryURL);
+        console.log(response);
+    });
     
 }
+
+$("#google-icon").on("click",initMap);
 // ============================================= USER AUTHENTICATION ==============================================
 var email="";
 var password= "";
